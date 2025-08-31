@@ -397,12 +397,12 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # VS Code files for those working on multiple tools
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
+# .vscode/*
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+# !.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
 .history/
@@ -416,3 +416,48 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+############################
+# OS junk / OneDrive noise
+############################
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+*.tmp
+*.bak
+*.swp
+*.swo
+
+############################
+# Node / React (Vite/Next) outputs & caches
+############################
+**/node_modules/            # VS template already has this in many cases; keep for safety
+**/dist/
+**/build/
+**/.next/
+**/.nuxt/
+**/.cache/
+**/.vite/
+**/coverage/
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+############################
+# Aspire / Docker (dev)
+############################
+# If you keep local docker-compose overrides or env files:
+# docker-compose.override.yml
+# *.env
+
+############################
+# IDEs (extra)
+############################
+# .idea/
+# .vscode/
+# If you WANT to share VS Code project settings, comment the two above
+
